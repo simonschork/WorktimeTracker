@@ -4,10 +4,10 @@ from tkinter import Tk, Button, Label
 
 
 # Initialize global variables
-safe_starttime = datetime.datetime.now()
-safe_pausetime = datetime.datetime.now()
-safe_workduration = datetime.datetime.now()
-safe_pauseduration = datetime.datetime.now()
+safe_starttime = tracker.current()
+safe_pausetime = tracker.current()
+safe_workduration = tracker.current()
+safe_pauseduration = tracker.current()
 
 
 # Start button function
@@ -37,7 +37,8 @@ def resume():
     # Set empty label value to resumetime
     pause_stop_value.config(text=tracker.formatTime(safe_resumetime))
     # Set empty label value to pauseduration
-    pause_duration_value.config(text=tracker.strfdelta(safe_pauseduration, "%H:%M:%S"))
+    pause_duration_value.config(
+        text=tracker.strfdelta(safe_pauseduration, "%H:%M:%S"))
 
 
 def stop():

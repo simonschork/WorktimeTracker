@@ -1,6 +1,7 @@
 import datetime
 from string import Template
 
+
 # Returns currend datetime
 def current():
     return datetime.datetime.now()
@@ -9,15 +10,6 @@ def current():
 # Returns string "h:m.s" for log
 def formatTime(datetime):
     return datetime.strftime("%H:%M:%S")
-
-
-# Returns string "d/m/y" for log
-def formatDate(datetime):
-    return datetime.strftime("%d/%m/%Y")
-
-
-def getTime():
-    return formatTime(current())
 
 
 class DeltaTemplate(Template):
