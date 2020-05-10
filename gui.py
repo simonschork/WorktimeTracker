@@ -4,10 +4,10 @@ from tkinter import Tk, Button, Label
 
 
 # Initialize global variables
-safe_starttime = tracker.current()
-safe_pausetime = tracker.current()
-safe_workduration = tracker.current()
-safe_pauseduration = tracker.current()
+safe_starttime: datetime
+safe_pausetime: datetime
+safe_workduration: datetime
+safe_pauseduration: datetime
 
 
 # Start button function
