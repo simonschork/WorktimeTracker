@@ -11,3 +11,5 @@ worktime() {
 }
 ```
 Restart your terminal and type "worktime" to start the app.  
+
+On GitLab now!
